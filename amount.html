@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculate Amount</title>
+    <link rel="stylesheet" href="css/flntuate.css">
+    <script>
+        function compute() {
+           /* var p = prompt("enter Principal");
+            var r = prompt("enter rate");
+            var t = prompt("enter time");
+            var a = p * (1 + ((r * t)/100));
+            //alert("Amount:" + a)
+            document.write("hello")*/
+            p = document.getElementById('p').value;
+            r = document.getElementById('r').value;
+            t = document.getElementById('t').value;
+            var a = p * (1 + ((r * t)/100));
+           alert("Amount:" + a)
+           // document.getElementById("result").value = a;
+        }
+     /*   var score = [30,20,10,55,77];
+        let text = "";
+        for (let count = 0; count < score.length; count++) {
+           text += score[count] + "<br>";
+        }
+        
+        document.getElementById("cou").innerHTML = text;
+        */
+     </script>
+</head>
+<body>
+    <div class="center">
+        <h1><STRong>Calculate Amount
+        </STRong></h1>
+        <form method="post">
+          <div class="txt_field">
+            <span></span>
+            <input type="text" required id="p">
+            <label for="label1">Enter Principal:</label>
+          </div>
+
+            <div class="txt_field">
+              <span></span>
+                <input type="text" required id="t">
+                <label for="label2">Enter Time</label>
+             </div>
+             <div class="txt_field">
+                <span></span>
+                  <input type="text" required id="r">
+                  <label for="label3">Enter Rate</label>
+               </div>
+               <input type="submit" value="Submit" onclick="compute(); ">
+               <!--input type="submit"-->
+             
+        </form>
+       
+    </div>
+   
+   
+</body>
+</html>
